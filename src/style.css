@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-background: #ffffff;
+  --color-button: #219f95;
+  --color-badge: #afcedd;
+  --color-text-black: #1e1e1e;
+  --color-text-blue: #234894;
+  --color-text-gray: #696969;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(/Staffs/font/Vazir-Medium-FD-WOL.ttf);
+}
+* {
+  font-family: vazir;
+}
+.container {
+  margin: auto 64px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 33px;
+}
+.reqSection {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.counter-section {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.count-textCount {
+  display: flex;
+  align-items: center;
+}
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-gray);
+}
+.count {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--color-badge);
+  span {
+    color: var(--color-text-blue);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px;
+  }
+}
+.textCount {
+  margin-right: 8px;
+  color: var(--color-text-blue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.id-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.req-text {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 27px;
+}
+.id-req {
+  color: var(--color-text-gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.profile-reqbtn-section {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+.image {
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.req-btn {
+  border: 0;
+  width: 150px;
+  height: 64px;
+  padding: 20px, 15px, 20px, 15px;
+  border-radius: 8px;
+  background: var(--color-button);
+  color: var(--color-background);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.grid-container {
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    margin: auto 32px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    margin: auto 8px;
+  }
+}
